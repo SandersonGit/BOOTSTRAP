@@ -7,6 +7,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
     />
+    <style>
+      #preco p {
+        width: 300px;
+        text-align: center;
+        justify-content: center;
+      }
+    </style>
     <title>Accordions</title>
 </head>
 <body>
@@ -42,6 +49,10 @@ explorar o uso de atributos customizados para controlar o comportamento de expan
 
       </div>
     </div>
+<br>
+<br>
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#preco">Ver Preço</button>
+    <p class="collapse" id="preco">R$ 300,00</p>
     <!-- Vamos analisar o código passo a passo:
 
 Tags <div> com classes "accordion" e "accordion-item": Essas tags representam os contêineres principais para os itens do acordeão. Cada item do acordeão é um componente independente.
