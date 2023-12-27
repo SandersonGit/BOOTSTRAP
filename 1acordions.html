@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <title>Accordions</title>
+</head>
+<body>
+  <!-- criar componentes de accordions no Bootstrap;
+compreender como aplicar estilos personalizados aos accordions usando as classes fornecidas pelo Bootstrap;
+explorar o uso de atributos customizados para controlar o comportamento de expansão e contração dos accordions. -->
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">Pergunta 1</button>
+        </div>
+        <div id="resposta1" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            resposta da pergunta 1
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">Pergunta 2</button>
+        </div>
+        <div id="resposta2" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            resposta da pergunta 2
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Vamos analisar o código passo a passo:
+
+Tags <div> com classes "accordion" e "accordion-item": Essas tags representam os contêineres principais para os itens do acordeão. Cada item do acordeão é um componente independente.
+
+Tags <div> com classes "accordion-header" e "accordion-button": Aqui, são definidos os cabeçalhos de cada item do acordeão. Os botões com a classe "accordion-button" são os elementos clicáveis que controlam a expansão e contração do conteúdo associado.
+
+Atributos data-bs-toggle e data-bs-target: São atributos especiais do Bootstrap utilizados para controlar o comportamento dos elementos. No caso, eles estão indicando que ao clicar no botão, o elemento associado ao data-bs-target será expandido ou contraído, e isso é controlado pelo data-bs-toggle.
+
+IDs únicos para cada item do acordeão (id="resposta1" e id="resposta2"): Esses IDs são usados como referência nos atributos data-bs-target dos botões. Eles conectam o botão ao conteúdo correspondente que deve ser expandido ou contraído.
+
+Elementos <div> com classes "accordion-collapse" e "collapse": Aqui é onde está o conteúdo que será mostrado ou escondido, dependendo do estado do acordeão. A classe "collapse" do Bootstrap é responsável por esconder o conteúdo quando a seção não está expandida.
+
+Elementos <div> com classe "accordion-body": Estes são os corpos das respostas das perguntas do acordeão. É o conteúdo que será expandido ou contraído quando o botão correspondente for clicado.
+
+<script> no final do código: Este script importa a biblioteca JavaScript do Bootstrap, que é necessária para que os componentes do acordeão funcionem corretamente. Ele permite que os eventos de expansão e contração sejam manipulados de acordo com os cliques nos botões.
+
+No geral, esse código utiliza as classes e funcionalidades do Bootstrap para criar um conjunto simples de accordions, onde cada pergunta (botão) está associada a uma resposta (conteúdo oculto), e ao clicar no botão, a resposta correspondente é exibida ou ocultada. -->
+    
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
