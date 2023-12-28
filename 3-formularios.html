@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <style>
+    time {
+        display: block;
+    }
+    .post {
+        margin-bottom: 24px;
+    }
+    #form {
+        max-width: 320px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="alert alert-success">
+                Confira as novidades do blog  <a href="#">clicando Aqui</a>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-8">
+            <div class="container g-0">
+                
+                <div class="row">
+                    <h2>Ultimas postagens</h2>
+                    <div class="col-md-4 post">
+                        <img src="https://via.placeholder.com/180x180" alt="">
+                        <h4 class="h5">Título da postagem </h4>
+                        <time>10/08/2023</time>
+                        <a href="" class="btn btn-primary btn-sm">Leia mais</a>
+                    </div>
+                    <div class="col-md-4 post">
+                        <img src="https://via.placeholder.com/180x180" alt="">
+                        <h4 class="h5">Título da postagem </h4>
+                        <time>10/08/2023</time>
+                        <a href="" class="btn btn-primary btn-sm">Leia mais</a>
+                    </div>
+                    <div class="col-md-4 post">
+                        <img src="https://via.placeholder.com/180x180" alt="">
+                        <h4 class="h5">Título da postagem </h4>
+                        <time>10/08/2023</time>
+                        <a href="" class="btn btn-primary btn-sm">Leia mais</a>
+                    </div>
+                    <div class="col-md-4 post">
+                        <img src="https://via.placeholder.com/180x180" alt="">
+                        <h4 class="h5">Título da postagem </h4>
+                        <time>10/08/2023</time>
+                        <a href="" class="btn btn-primary btn-sm">Leia mais</a>
+                    </div>
+                    <div class="col-md-4 post">
+                        <img src="https://via.placeholder.com/180x180" alt="">
+                        <h4 class="h5">Título da postagem </h4>
+                        <time>10/08/2023</time>
+                        <a href="" class="btn btn-primary btn-sm">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-end">
+            
+            <div>
+                <h2>Anunciantes</h2>
+                <img src="https://via.placeholder.com/180x180" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" id="form">
+            <h2>Contatos</h2>
+            <form>
+                <label class="form-label" for="nome">Seu nome:</label>
+                <input class="form-control" type="text" id="nome" required>
+
+                <label class="form-label" for="email">Seu e-mail:</label>
+                <input class="form-control" type="text" id="email" required>
+
+                <label class="form-label" for="mensagem">Sua mensagem:</label>
+                <textarea class="form-control" id="mensagem"></textarea>
+
+                <div class="form-check">
+                    
+                    <label class="form-check-label" for="aceite">Li e conrcodo com os termos</label>
+                    <input class="form-check-input" type="checkbox" id="aceite">
+
+                </div>
+                <div class="form-check form-switch">
+
+                    <label class="form-check-label" for="aceite">Li e conrcodo com os termos</label>
+                    <input class="form-check-input" type="checkbox" id="aceite">
+
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
